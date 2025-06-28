@@ -31,6 +31,7 @@ See [📚 References](#-references) for full citations.
 ## 📁 Repository Structure
 
 ---
+```
 .
 ├── GeneratorCodes/
 │   ├── Boundary                    # Saved Boundary Scenarios.
@@ -50,6 +51,7 @@ See [📚 References](#-references) for full citations.
 ├── Run.bat                         # .bat file to Run                      
 ├── Run.py                          # Entry point for batch execution
 └── SD_Seasonality.xlsx             # Editable input
+```
 ---
 
 ---
