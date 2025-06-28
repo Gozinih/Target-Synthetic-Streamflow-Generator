@@ -52,7 +52,6 @@ See [📚 References](#-references) for full citations.
 ├── Run.py                          # Entry point for batch execution
 └── SD_Seasonality.xlsx             # Editable input
 ```
----
 
 ---
 
