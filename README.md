@@ -58,11 +58,11 @@ The **H5Web** extension is useful for exploring `.h5` output files directly with
 ## 🧠 Workflow Overview
 
 1. **Input Configuration**  
-   Set your simulation parameters and file paths in `InputData.txt`.
-   `RecordedData.xlsx`: Daily flow data and `isLocal` flags (2 sheets)
-   `Mean_Seasonality.xlsx`: Seasonal mean change matrix [locations × 12]
-   `SD_Seasonality.xlsx`: Seasonal SD change matrix [locations × 12]
-   *(Optional)* `RandomYearMatrix.xlsx`: Year sampling matrix (auto-generated if missing)
+   - Set your simulation parameters and file paths in `InputData.txt`.
+   - `RecordedData.xlsx`: Daily flow data and `isLocal` flags (2 sheets)
+   - `Mean_Seasonality.xlsx`: Seasonal mean change matrix [locations × 12]
+   - `SD_Seasonality.xlsx`: Seasonal SD change matrix [locations × 12]
+   - *(Optional)* `RandomYearMatrix.xlsx`: Year sampling matrix (auto-generated if missing)
 
 2. **Execution**  
    Run the full process via:
@@ -81,6 +81,7 @@ The **H5Web** extension is useful for exploring `.h5` output files directly with
 ## 📊 Scenario Generation Logic
 
 The process includes:
+- Main code to upload data and run the generator (`a1`)
 - Random year matrix generation (`a2`)
 - Boundary space generation (`a3`, `a4`, `a5`, `a6`)
 - Stochastic streamflow generator  (`a4`) **Kirsch et al. (2013)**
