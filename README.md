@@ -27,11 +27,11 @@ The codebase was developed and tested using [Visual Studio Code](https://code.vi
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue) 
 The **H5Web** extension is useful for exploring `.h5` output files directly within VS Code.
 
-```
+---
 
 ## 📁 Repository Structure
 
-```
+---
 .
 ├── GeneratorCodes/
 │   ├── Boundary                    # Saved Boundary Scenarios.
@@ -51,7 +51,7 @@ The **H5Web** extension is useful for exploring `.h5` output files directly with
 ├── Run.bat                         # .bat file to Run                      
 ├── Run.py                          # Entry point for batch execution
 └── SD_Seasonality.xlsx             # Editable input
-```
+---
 
 ---
 
@@ -66,11 +66,9 @@ The **H5Web** extension is useful for exploring `.h5` output files directly with
 
 2. **Execution**  
    Run the full process via:
-   ```bash
-   python Run.py
-   ```
+   Run.bat or Run.py
 
-3. **Outputs**  
+4. **Outputs**  
    Depending on the flags, the script will produce:
    - Daily (cms) CSV files (`/DailyTimeseriesCSVFiles`)
    - Monthly (cms) CSV files (`/MonthlyTimeseriesCSVFiles`)
