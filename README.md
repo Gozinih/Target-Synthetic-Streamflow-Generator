@@ -83,7 +83,7 @@ The **H5Web** extension is useful for exploring `.h5` output files directly with
 ## 📊 Scenario Generation Logic
 
 The process includes:
-- Random year matrix generation (`a2_`)
+- Random year matrix generation (`a2`)
 - Boundary space generation (`a3`, `a4`, `a5`, `a6`)
 - Stochastic streamflow generator  (`a4`) **Kirsch et al. (2013)**
 - Mean and SD calculator functions (`a5`, `a6`)
