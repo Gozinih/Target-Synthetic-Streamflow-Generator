@@ -93,10 +93,10 @@ def boundary_coordinate_generator(data, isLocal, numberofyears_syntheticdata, nu
            ds3.attrs['dimension'] = 'Scenario x Month x Location'
            ds3.attrs['description'] = 'Boundary scenarios: resulted SD change for different locations and months'
 
-        print("📁 Boundary Coordinates Are Saved on GeneratorCodes\Boundary\Boundary_Coordinates.h5.")
+        print(r"📁 Boundary Coordinates Are Saved on GeneratorCodes\Boundary\Boundary_Coordinates.h5.")
 
     else:
-        print("🔄 Loading Previously Generated Boundaries from GeneratorCodes\Boundary\Boundary_Coordinates.h5.")
+        print(r"🔄 Loading Previously Generated Boundaries from GeneratorCodes\Boundary\Boundary_Coordinates.h5.")
         with h5py.File(os.path.join(boundaryfolderpass, 'Boundary_Coordinates.h5'), 'r') as h5f:
             x_boundary = h5f['Mean[Scenario x Month x Location]'][:]
             y_boundary = h5f['SD[Scenario x Month x Location]'][:]
