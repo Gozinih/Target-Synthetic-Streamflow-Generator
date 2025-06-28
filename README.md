@@ -22,7 +22,7 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-> 💻 **Recommended Development Environment**:  
+## 💻 **Recommended Development Environment**:  
 The codebase was developed and tested using [Visual Studio Code](https://code.visualstudio.com/) with the Python 3.11 interpreter. 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue) 
 The **H5Web** extension is useful for exploring `.h5` output files directly within VS Code.
