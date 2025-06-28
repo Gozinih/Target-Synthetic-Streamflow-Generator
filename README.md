@@ -73,7 +73,7 @@ See [📚 References](#-references) for full citations.
    - Monthly (cms) CSV files (`/MonthlyTimeseriesCSVFiles`)
    - HDF5 files with all results (`/OutputData`)
    - Saved HDF5 input for reproducibility (`/InputData`)
-   > 💡 To browse `.h5` files easily in VS Code, install the **H5Web** extension from the Extensions Marketplace.
+  💡 To browse `.h5` files easily in VS Code, install the **H5Web** extension from the Extensions Marketplace.
 
 ---
 
