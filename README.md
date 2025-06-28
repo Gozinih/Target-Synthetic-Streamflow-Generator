@@ -78,7 +78,7 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-## 📊 Scenario Generation Logic
+## 📊 Scenario Generation Tools (GeneratorCodes/)
 
 The process includes:
 - Main code to upload data and run the generator (`a1`)
