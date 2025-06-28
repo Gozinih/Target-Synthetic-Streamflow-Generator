@@ -9,7 +9,7 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-## 📦 Key Features
+📦 Key Features
 
 - Generate synthetic streamflow scenarios, targeting monthly magnitude (mean), variation (standard deviation), and seasonality.
 - Remove fully infeasible scenarios and adjust partially infeasible ones, based on boundary scenarios.
@@ -22,13 +22,13 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-## 💻 **Recommended Development Environment**:  
+💻 **Recommended Development Environment**:  
 - The codebase was developed and tested using [Visual Studio Code](https://code.visualstudio.com/) with the [Python 3.11](https://img.shields.io/badge/Python-3.11-blue) interpreter.
 - The **H5Web** extension is useful for exploring `.h5` output files directly within VS Code.
 
 ---
 
-## 📁 Repository Structure
+📁 Repository Structure
 
 ```
 .
@@ -54,7 +54,7 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-## 🧠 Workflow Overview
+🧠 Workflow Overview
 
 1. **Input Configuration**  
    - Set your simulation parameters and file paths in `InputData.txt`.
@@ -77,7 +77,7 @@ See [📚 References](#-references) for full citations.
 
 ---
 
-## 📊 Scenario Generation Tools (GeneratorCodes/)
+📊 Scenario Generation Tools (GeneratorCodes/)
 
 The process includes:
 - Main code to upload data and run the generator (`a1`)
@@ -93,7 +93,7 @@ Each script is modular, documented, and uses Numba-accelerated routines for perf
 
 ---
 
-## 📈 Visualization Tools (`PlottingCodes/`)
+📈 Visualization Tools (`PlottingCodes/`)
 
 The repository includes optional plotting scripts for scenario evaluation:
 
@@ -110,7 +110,7 @@ Each plotting tool reads `.h5` scenario outputs from `/Scenarios/OutputData` and
 
 ---
 
-## ⚙️ Dependencies
+⚙️ Dependencies
 
 Developed and tested with **Python 3.11**
 Install required Python packages (automatically handled by `Run.py`):
@@ -118,7 +118,7 @@ Install required Python packages (automatically handled by `Run.py`):
 
 ---
 
-## 📚 References
+📚 References
 
 - **a17_Disaggregation.py**  
   Based on the disaggregation method from:  
@@ -134,13 +134,15 @@ Install required Python packages (automatically handled by `Run.py`):
   *Journal of Water Resources Planning and Management, 139(4), 396–406.*  
   [https://doi.org/10.1061/(asce)wr.1943-5452.0000287](https://doi.org/10.1061/(asce)wr.1943-5452.0000287)
 
-## 📜 License
+---
+
+📜 License
 
 See [LICENSE](./LICENSE) for licensing terms.
 
 ---
 
-## ✍️ Citation
+✍️ Citation
 
 If you use this code in research or policy applications, please cite the original authors and contributors. Attribution is appreciated when extending or modifying the code.
 
