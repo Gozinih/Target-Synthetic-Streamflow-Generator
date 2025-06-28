@@ -1,0 +1,50 @@
+# ====================================================================================
+#                             USER-DEFINED INPUT SECTION
+# ====================================================================================
+# Update the following values and files as needed before running the script
+
+# === Input Excel Files ===
+recorded_data = 'RecordedData.xlsx'                    # <- Daily flow data (cms) & isLocal (1 = local, 0 = nonlocal) flags [Sheet1 & Sheet2]
+mean_seasonality_data = 'Mean_Seasonality.xlsx'        # <- Seasonal mean change (%) [locations × 12]
+sd_seasonality_data = 'SD_Seasonality.xlsx'            # <- Seasonal std. dev. change (%) [locations × 12]
+randomyear_data = 'RandomYearMatrix.xlsx'              # <- (Optional) Pre-generated synthetic year matrix
+
+# === Simulation Configuration ===
+numberofyears_syntheticdata = 38   # Number of synthetic years to simulate (one year will be added because of concatenating Z and Z')
+startyear_synthetic = 1980         # Start year for synthetic daily data (for leap-year alignment)
+alreadyexist = 1                   # 1 = Load existing 'RandomYearMatrix.xlsx'; 0 = Generate new using matrix_year()
+
+# === Scenario Type: Single or Multiple Target Deviations ===
+range_flag = 1                     # 0 = single target deviation, 1 = multiple target deviations
+
+# === Deviation Values (Used if range_flag == 1) ===
+desired_change_mean = np.arange(-80, 81, 10)  # [min, max+1, step]
+desired_change_sd = np.arange(-80, 81, 10)
+
+# === Deviation Values (Used if range_flag == 0) ===
+single_deviation_mean = 0              # Single target deviation for monthly means (%)
+single_deviation_sd = -10              # Single target deviation for monthly SDs (%)
+numberofscenarios_onetarget = 10       # Generate Multiple Scenario for a Single Target Deviation?
+
+# === Boundary Configuration ===         # 1 = Use saved boundary data; 0 = regenerate boundaries for new recorded inflow data
+BoundaryCoordinate_AlreadyGenerated = 0  # Set it 0 first to generate and save boundary scenarios. Then set it 1 to use the saved data.
+
+# === Optimization Criteria ===
+distance_threshold = 0.01         # Minimum acceptable monthly distance (resultant from target, in %) for early stop in optimization
+
+# === Parallel Optimization ===
+enable_parallel = True             # Set to True to enable parallel optimization for locations in each scenario
+
+## === Define Output/Input Paths ===
+resultfolder = 'Scenarios'            # Change folder name to save new scenarios in a new folder
+
+## === Saving Timeseries Csv Files ===      # 1 = save; 0 = do not save
+daily = 0
+monthly = 0
+
+## === Saving .h5 Data of Optimized Scenarios ===      # 1 = save; 0 = do not save 
+h5 = 1                                                 # .h5 files are needed for plotting in c1 to c3
+
+# ====================================================================================
+#                               End of USER-DEFINED INPUT SECTION
+# ====================================================================================
