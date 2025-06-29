@@ -69,8 +69,8 @@ See [📚 References](#-references) for full citations.
 
 4. **Outputs**  
    Depending on the flags, the script will produce:
-   - Daily (cms) CSV files (`/DailyTimeseriesCSVFiles`)
-   - Monthly (cms) CSV files (`/MonthlyTimeseriesCSVFiles`)
+   - Daily (cubic meter/sec) CSV files (`/DailyTimeseriesCSVFiles`)
+   - Monthly (million cubic meter/month) CSV files (`/MonthlyTimeseriesCSVFiles`)
    - HDF5 files with all results (`/OutputData`)
    - Saved HDF5 input for reproducibility (`/InputData`)
    💡 To browse `.h5` files easily in VS Code, install the **H5Web** extension from the Extensions Marketplace.
