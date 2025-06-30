@@ -4,7 +4,7 @@ This repository provides a Python-based framework to generate **target synthetic
 
 The project is a faithful translation and improvement of an original MATLAB implementation, helped by ChatGPT, designed to support water resources planning under different climate or policy change scenarios.
 
-The methodology of **Nowak et al. (2010)** is used for disaggregation and **Kirsch et al. (2013)** for synthetic flow generation. 
+The methodology of **Kirsch et al. (2013)** is used for synthetic monthly flow generation and **Nowak et al. (2010)** for disaggregation to daily. 
 See [📚 References](#-references) for full citations.
 
 ---
