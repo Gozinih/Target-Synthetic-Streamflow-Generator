@@ -41,8 +41,8 @@ for sce in range(n_scenarios):
     file_path = os.path.join(output_path, f"Scenario{sce+1}.h5")
     if os.path.exists(file_path):
         with h5py.File(file_path, "r") as f:
-            Monthly_Synthetic = f["Monthly_Synthetic[Year x Month x Location]"][:]
-            Monthly_Recorded = f["Monthly_Recorded[Year x Month x Location]"][:]
+            Monthly_Synthetic = f["Monthly_Synthetic(million m3/month)[Year x Month x Location]"][:]
+            Monthly_Recorded = f["Monthly_Recorded(million m3/month)[Year x Month x Location]"][:]
             for j, k in enumerate(locations):
                 synthetic_data[:, sce, j] = Monthly_Synthetic[:, :, k].T.flatten()
                 if sce == 0:
