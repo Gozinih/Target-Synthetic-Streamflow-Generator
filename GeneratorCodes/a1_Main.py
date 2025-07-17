@@ -68,6 +68,7 @@ h5 = 1                                                 # .h5 files are needed fo
 recorded_data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', recorded_data))
 Data = pd.read_excel(recorded_data_path, sheet_name='Sheet1', header=None).values
 Data = Data[1:, :]
+Data[Data <= 0] = 0.001
 
 isLocal = pd.read_excel(recorded_data_path, sheet_name='Sheet2', header=None).values
 isLocal = isLocal[1:, :]
