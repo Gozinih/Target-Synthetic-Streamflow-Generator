@@ -207,15 +207,15 @@ def perform_inverse_optimization_and_disaggregation(
                 ds2.attrs['dimension'] = 'Location'
                 ds2.attrs['description'] = 'Total Euclidean distance from target per location'
 
-                ds3 = h5f.create_dataset('Monthly_Synthetic(million m3/month)[Year x Month x Location]', data=Monthly_Synthetic)
+                ds3 = h5f.create_dataset('Monthly_Synthetic(million m3 per month)[Year x Month x Location]', data=Monthly_Synthetic)
                 ds3.attrs['dimension'] = 'Year x Month x Location'
                 ds3.attrs['description'] = 'Synthetic monthly streamflow for each location and year'
 
-                ds4 = h5f.create_dataset('Monthly_Recorded(million m3/month)[Year x Month x Location]', data=Monthly_Recorded)
+                ds4 = h5f.create_dataset('Monthly_Recorded(million m3 per month)[Year x Month x Location]', data=Monthly_Recorded)
                 ds4.attrs['dimension'] = 'Year x Month x Location'
                 ds4.attrs['description'] = 'Recorded (historical) monthly streamflow data'
 
-                ds5 = h5f.create_dataset('DailyTimeSeries_Synthetic(m3/s)[Day x Location]', data=DailyTimeSeries_Synthetic)
+                ds5 = h5f.create_dataset('DailyTimeSeries_Synthetic(m3 per s)[Day x Location]', data=DailyTimeSeries_Synthetic)
                 ds5.attrs['dimension'] = 'Day x Location'
                 ds5.attrs['description'] = 'Final synthetic daily streamflow per location'
 
