@@ -19,7 +19,7 @@ if not os.path.exists(user_input_file):
     sys.exit(1)
 
 # === Step 3: Install missing packages ===
-required_packages = ['pandas', 'numpy', 'h5py', 'openpyxl', 'scipy', 'joblib', 'matplotlib', 'numba']
+required_packages = ['pandas', 'numpy', 'h5py', 'openpyxl', 'scipy', 'joblib', 'matplotlib', 'numba', 'tqdm']
 
 for pkg in required_packages:
     try:
@@ -58,4 +58,5 @@ with open(main_file, "w", encoding="utf-8") as f:
 print("✅ User Input Data Is Loaded")
 
 # === Step 5: Run the main script ===
+
 subprocess.run([sys.executable, main_file])
