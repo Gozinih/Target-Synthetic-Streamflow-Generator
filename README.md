@@ -145,7 +145,7 @@ See [LICENSE](./LICENSE) for licensing terms.
 ## ✍️ Citation
 
 If you use this code in research or policy applications, please cite the original authors and contributors. Attribution is appreciated when extending or modifying the code.
-Gozini, H., Asadzadeh, M., & Stadnyk, T. (2025). Target Synthetic Streamflow Generator (v1.0). Zenodo. https://doi.org/10.5281/zenodo.17195525
+- Gozini, H., Asadzadeh, M., & Stadnyk, T. A. (2025). Target Synthetic Streamflow Generator (v1.0). Zenodo. https://doi.org/10.5281/zenodo.17195525
 
 ---
 
