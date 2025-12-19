@@ -112,9 +112,9 @@ Each plotting tool reads `.h5` scenario outputs from `/Scenarios/OutputData` and
 
 ## ⚙️ Dependencies
 
-Developed and tested with **Python 3.11**
+Developed and tested with **Python 3.11**. 
 Install required Python packages (automatically handled by `Run.py`):
-- `numpy`, `pandas`, `scipy`, `h5py`, `joblib`, `openpyxl`, `numba`, `matplotlib`, `numba`
+- `numpy`, `pandas`, `scipy`, `h5py`, `joblib`, `openpyxl`, `numba`, `matplotlib`, `numba`, `tdqm`
 
 ---
 
